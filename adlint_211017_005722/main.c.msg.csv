@@ -1,4 +1,4 @@
-V,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+V,3.2.14,2021-10-17 00:46:04 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
 W,main.c,1,15,c_builtin,W0118,UNC,X99,"`a' has external-linkage, but no prototype declaration is in header files."
 W,main.c,2,13,c_builtin,W0118,UNC,X99,"`test_b' has external-linkage, but no prototype declaration is in header files."
 W,main.c,2,13,c_builtin,W0078,UNC,X99,A function is declared without list of formal argument.

@@ -6,3 +6,5 @@ call adlint_2_adlint.bat
 cd %CURRENT_DIR%
 call adlint_3_result.bat
 cd %CURRENT_DIR%
+call adlint_4_backup.bat
+cd %CURRENT_DIR%
