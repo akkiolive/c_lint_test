@@ -1,0 +1,15 @@
+I, [2021-10-16 22:47:38 #2756]  INFO -- CMA-3.2.14: start analysis by adlint-3.2.14 with c_builtin-3.2.14.
+F, [2021-10-16 22:47:38 #2756] FATAL -- CMA-3.2.14: Permission denied @ rb_sysopen - intro_demo.msg.csv (Errno::EACCES)
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/report.rb:122:in `initialize'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/report.rb:122:in `open'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/report.rb:122:in `open_msg_file'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/report.rb:42:in `initialize'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/analyzer.rb:180:in `new'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/analyzer.rb:180:in `execute'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/analyzer.rb:72:in `block in run'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/analyzer.rb:65:in `open'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/analyzer.rb:65:in `run'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/lib/adlint/driver.rb:67:in `run_cma!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/adlint-3.2.14/bin/adlint:137:in `<top (required)>'
+C:/Ruby30-x64/bin/adlint:23:in `load'
+C:/Ruby30-x64/bin/adlint:23:in `<main>'

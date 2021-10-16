@@ -1,0 +1,2 @@
+V,3.2.14,2021-10-16 22:41:55 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/intro_demo
+W,intro_demo.c,74,19,c_builtin,W0628,UNC,X99,"A function `int bar(void)' is defined, but this is not used in this project."

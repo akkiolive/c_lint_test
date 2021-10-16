@@ -1,0 +1,448 @@
+﻿/**********************************************************
+Windows 10 ライトスタイル
+推奨環境: Windows 10
+**********************************************************/
+
+/**********************************************************
+全体 (script\index.html)
+***********************************************************/
+/* カーソルアイコンと背景色の設定 */
+.layout {
+  cursor: default;
+  background-color: Window;
+}
+
+/**********************************************************
+基本レイアウト (script\index.html)
+**********************************************************/
+#ToolBar1Left, #ToolBar1Center, #ToolBar1Right,
+#ToolBar2Left, #ToolBar2Center, #ToolBar2Right,
+#ToolBar3Left, #ToolBar3Center, #ToolBar3Right,
+#ToolBar4Left, #ToolBar4Center, #ToolBar4Right,
+#ToolBar5Left, #ToolBar5Center, #ToolBar5Right {
+  padding: 1px 2px;
+}
+
+#ToolBar1Left {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+#ToolBar1Center {
+  padding-top: 0;
+}
+
+#ToolBar1Right {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+/**********************************************************
+Inner レイアウト (addons\innerback, addons\innerforward)
+***********************************************************
+/* 上部コントロール・ボタン */
+[id^="Inner1Left_"] > * {
+  margin: 5px 0;
+}
+
+/* 上部コントロール・フィルター バー */
+[id^="Inner1Right_"] > * {
+  margin: 5px 0;
+}
+
+/* 上部コントロール・アドレス バー */
+[id^="Inner1Center_"] > * {
+  margin: 5px 2px;
+}
+
+[id^="Inner1Center_"] {
+  vertical-align: middle;
+}
+
+/**********************************************************
+ダイアログ (script\options.html, script\options.html)
+**********************************************************/
+/* ダイアログの設定項目の背景色 */
+.panel {
+  background-color: Window;
+}
+
+/* アドオンを入手画面のストライプ偶数行 */
+.oddline {
+  background-color: ButtonFace;
+}
+
+/**********************************************************
+フォーム (script\options.html, addons\addressbar)
+**********************************************************/
+/* ダイアログのボタン (タブは除く) */
+button:not([id^="tab"]),
+input[type="button"]:not([id^="tab"]),
+input[type="file"]:not([id^="tab"]),
+input[type="submit"]:not([id^="tab"]),
+input[type="reset"]:not([id^="tab"]) {
+  background-color: #e1e1e1;
+  border: solid 1px #adadad;
+  transition: background-color 0.4s, border-color 0.4s;
+}
+
+button:not([id^="tab"]):hover,
+input[type="button"]:not([id^="tab"]):hover,
+input[type="file"]:not([id^="tab"]):hover,
+input[type="submit"]:not([id^="tab"]):hover,
+input[type="reset"]:not([id^="tab"]):hover {
+  background-color: #e5f1fb;
+  border-color: Highlight;
+}
+
+button:not([id^="tab"]):focus,
+input[type="button"]:not([id^="tab"]):focus,
+input[type="file"]:not([id^="tab"]):focus,
+input[type="submit"]:not([id^="tab"]):focus,
+input[type="reset"]:not([id^="tab"]):focus {
+  border-color: Highlight;
+}
+
+/* ダイアログのコンボボックス */
+select {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+select::-ms-expand {
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+/* ダイアログとアドレス バーとフィルター バーのテキストフォーム */
+textarea, select,
+input[type="text"], input[type="password"] {
+  border: solid 1px #d9d9d9;
+}
+
+textarea:focus, select:focus,
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: Highlight;
+  transition: border-color 0.2s;
+}
+
+/* ダイアログとアドレス バーとフィルター バーのテキストボックス */
+input[type="text"] {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+
+input[type="text"]:-ms-input-placeholder {
+  color: GrayText;
+}
+
+/**********************************************************
+区切り線 (addons\toolbar)
+**********************************************************/
+.separator {  
+  padding: 0 3px;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0);
+  background: linear-gradient(to top, #d9d9d9, #d9d9d9) repeat-y center/1px;
+  /* background: linear-gradient(to top, #8c8c8c, #8c8c8c) repeat-y center/1px; */
+}
+
+#bottombar .separator {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/**********************************************************
+ボタン (addons\toolbar, addons\forward, addons\back)
+***********************************************************/
+/* ボタン全般 */
+.hoverbutton {
+  background-color: rgba(204, 232, 255, 0.5);
+  border-color: rgba(153, 209, 255, 0.33);
+}
+
+.button > *, .hoverbutton > * {
+  vertical-align: middle;
+}
+
+/* ドライブ バーのドライブ文字 */
+.button .drive, .hoverbutton .drive {
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ボタン背景のフェードアウト設定 (お気に入り バー除く) */
+.button:not([id^="fav"]) {
+  transition: background-color 0.3s;
+}
+
+/* ボタンアイコンの余白設定 (お気に入り バー除く) */
+.button:not([id^="fav"]) > img, .hoverbutton:not([id^="fav"]) > img {
+  margin: 1px 2px;
+}
+
+/* ボタンテキストの余白設定 (お気に入り バー除く) */
+.button:not([id^="fav"]) > span:not(:first-child), .hoverbutton:not([id^="fav"]) > span:not(:first-child) {
+  margin-left: -2px;
+  padding-right: 4px;
+}
+
+/* アイコンの高さをきっちり揃える設定 (お気に入り バー(水平)除く) */
+.button:not([id^="_favbar"]) > img:only-child, .hoverbutton:not([id^="_favbar"]) > img:only-child {
+  display: block;
+}
+
+/**********************************************************
+メイン メニュー (addons\mainmenu)
+***********************************************************/
+.menu {
+  margin: 1px 0;
+  padding: 0 7px;
+  vertical-align: middle;
+  /* transition: background-color 0.3s; */
+}
+
+.hovermenu, .activemenu {
+  background-color: rgba(204, 232, 255, 0.5);
+  border-color: rgba(153, 209, 255, 0.33);
+  padding: 0 6px;
+  vertical-align: middle;
+}
+
+/**********************************************************
+タブプラス (addons\tabplus)
+***********************************************************/
+/* タブ基本設定 */
+.tab, .tab2, .tab3, .activetab {
+  margin: 1px 0 0 -1px;
+  border-color: #d9d9d9;
+  background-color: ButtonFace;
+  background-image: none;
+  opacity: 1;
+  filter: alpha(style=0,opacity=100);
+  box-shadow: none;
+  /* transition: box-shadow 0.3s; */
+}
+
+.tab, .tab2, .activetab {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.tab:hover, .tab2:hover, .tab3:hover {
+  box-shadow: 0 0 0 9em rgba(204, 232, 255, 0.5) inset;
+}
+
+/* タブ全体の下線設定 */
+.tab0 {
+  box-shadow: 0 -0.5px 0 0 #b3b3b3 inset;
+}
+
+/* フォルダアイコンの高さを中央揃えする設定 */
+.tab img[style*="height:"], .tab2 img[style*="height:"], .activetab img[style*="height:"] {
+  display: block;
+}
+
+/* 新しいタブの文字設定 */
+.tab3 {
+  font-family: "MS UI Gothic";
+  color: ButtonShadow;
+}
+
+.tab3:hover {
+  color: inherit;
+}
+
+/* 新しいタブの文字の縁取り
+.tab3 {
+  font-family: "MS UI Gothic";
+  color: Window;
+  text-shadow: 
+    #aaa 1px 1px 0, #aaa 1px -1px 0, #aaa -1px 1px 0, #aaa -1px -1px 0,
+    #aaa 0px 1px 0, #aaa 0px -1px 0, #aaa -1px 0px 0, #aaa  1px  0px 0;
+} */
+
+/* タブを閉じるボタン設定 */
+.tab .button, .tab2 .button, .activetab .button {
+  opacity: 0.6;
+  filter: alpha(style=0,opacity=60);
+  /* transition: opacity 0.3s; */
+}
+
+.tab .hoverbutton, .tab2 .hoverbutton, .activetab .hoverbutton {
+  opacity: 1;
+  filter: alpha(style=0,opacity=100);
+}
+
+/* ドライブ文字の設定 */
+.tab .drive, .tab2 .drive, .activetab .drive {
+  line-height: 1.93em;
+  /* line-height: 1em; ドライブ文字をアイコンの左上に表示 */
+  /* padding-left: 2px; ドライブ文字をアイコンの中央に表示 */
+}
+
+/* タブからはみ出た文字の設定 */
+.tab div, .tab2 div, .tab3 div, .activetab div {
+  text-overflow: ellipsis;
+}
+
+/* タブカラープラスの設定 */
+.activetab {
+  background-color: Window;
+  box-shadow:
+    1px 0 0 0 Window inset,
+    -1px 0 0 0 Window inset,
+    0 1px 0 0 Window inset,
+    0 0 0 9em rgba(255, 255, 255, 0.6) inset;
+}
+
+/* 上配置設定 */
+[id^="InnerTop_"] .activetab {
+  box-shadow:
+    0 0 0 1px Window inset,
+    0 -0.4em 2em 0 Window inset;
+}
+
+/* 下配置設定 */
+[id^="InnerBottom_"] .tab, [id^="InnerBottom_"] .tab2, [id^="InnerBottom_"] .tab3, [id^="InnerBottom_"] .activetab {
+  vertical-align: top;
+  margin: 0 0 1px -1px;
+}
+
+[id^="InnerBottom_"] .activetab {
+  border-style: solid;
+  border-width: 1px;
+  border-top: 0;
+  padding-top: 2px;
+  box-shadow:
+    0 0 0 1px Window inset,
+    0 0.4em 2em 0 Window inset;
+}
+
+[id^="InnerBottom_"] .tab0 {
+  box-shadow: 0 0.5px 0 0 #b3b3b3 inset;
+}
+
+/* 左右配置設定 */
+[id^="InnerLeft_"] .tab, [id^="InnerLeft_"] .tab2, [id^="InnerLeft_"] .tab3, [id^="InnerLeft_"] .activetab,
+[id^="InnerRight_"] .tab, [id^="InnerRight_"] .tab2, [id^="InnerRight_"] .tab3, [id^="InnerRight_"] .activetab {
+  margin: 0 0 1px 0;
+}
+
+[id^="InnerLeft_"] .activetab,
+[id^="InnerRight_"] .activetab {
+  border-style: solid;
+  border-width: 1px;
+  height: 2em;
+  box-shadow:
+    0 0 0 1px Window inset,
+    0 0 2em 0 Window inset;
+}
+
+[id^="InnerLeft_"] .tab0,
+[id^="InnerRight_"] .tab0 {
+  box-shadow: none;
+}
+
+/**********************************************************
+タブグループ (addons\tabgroups)
+***********************************************************/
+#tabgroups {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 -1px;
+  box-shadow: none;
+}
+
+#tabgroups li {
+  line-height: 1.34em;
+  margin: 0;
+  box-shadow: none;
+}
+
+#tabgroups .tab, #tabgroups .tab2, #tabgroups .tab3, #tabgroups .activetab {
+  height: 100%;
+  z-index: 0;
+  vertical-align: inherit;
+
+  padding: 0 6px;
+  border: none;
+  background-color: inherit;
+  /* transition: background-color 0.3s; */
+}
+
+#tabgroups .tab:hover, #tabgroups .tab2:hover, #tabgroups .tab3:hover {
+  padding: 0 5px;
+  border: solid 1px rgba(153, 209, 255, 0.33);
+  background-color: rgba(204, 232, 255, 0.5);
+}
+
+#tabgroups .activetab {
+  padding: 0 5px;
+  border: solid 1px rgba(153, 209, 255, 1);
+  background-color: rgba(204, 232, 255, 1);
+}
+
+/**********************************************************
+ステータス バー (addons\statusbar, addons\sizestatus)
+**********************************************************/
+/* テキストのみのコントロールの位置設定 */
+#statusbar, #size_statusbar, #countbar, #fullpathbar {
+  vertical-align: middle;
+}
+
+/**********************************************************
+ツール バー (addons\toolbar)
+**********************************************************/
+/* 初期の[+]ボタンの設定 */
+#_toolbar label.button:only-child {
+  padding: 3px 5px;
+  font-family: "MS UI Gothic";
+  color: Window;
+  text-shadow: 
+    #aaa 1px 1px 0, #aaa 1px -1px 0, #aaa -1px 1px 0, #aaa -1px -1px 0,
+    #aaa 0px 1px 0, #aaa 0px -1px 0, #aaa -1px 0px 0, #aaa  1px  0px 0;
+}
+
+#_toolbar label.hoverbutton:only-child {
+  padding: 2px 4px;
+  font-family: "MS UI Gothic";
+  color: Window;
+  text-shadow: 
+    #aaa 1px 1px 0, #aaa 1px -1px 0, #aaa -1px 1px 0, #aaa -1px -1px 0,
+    #aaa 0px 1px 0, #aaa 0px -1px 0, #aaa -1px 0px 0, #aaa  1px  0px 0;
+}
+
+/**********************************************************
+リンク バー (addons\linkbar)
+**********************************************************/
+/* 編集ボタンを非表示 */
+#_linkbar label {
+  display: none;
+}
+
+/* テキストを非表示
+#_linkbar .linklabel {
+  display: none;
+} */
+
+/**********************************************************
+お気に入り バー(水平) (addons\favbar)
+**********************************************************/
+#_favbar .button {
+  padding-right: 4px;
+}
+
+#_favbar .hoverbutton {
+  padding-right: 3px;
+}
+
+/**********************************************************
+オプション画面ボタン (script\options.html)
+**********************************************************/
+input[type="button"] {
+  background-color: #e1e1e1;
+  border: solid 1px #adadad;
+}

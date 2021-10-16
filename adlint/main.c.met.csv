@@ -1,0 +1,20 @@
+VER,3.2.14,2021-10-17 00:29:55 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+DCL,main.c,1,15,V,a,double
+DCL,main.c,2,13,F,X,F,E,test_b,void test_b()
+DEF,main.c,4,6,F,X,F,main,void main(),4
+DEP,main.c,5,5,X,F,main,void main(),R,test_b,void test_b()
+DEP,main.c,5,11,C,main,void main(),test_b,void test_b()
+MET,FN_UNUV,main,void main(),main.c,4,6,0
+MET,FN_PATH,main,void main(),main.c,4,6,1
+MET,FN_LINE,main,void main(),main.c,4,6,4
+MET,FN_PARA,main,void main(),main.c,4,6,0
+MET,FN_STMT,main,void main(),main.c,4,6,1
+MET,FN_UNRC,main,void main(),main.c,4,6,0
+MET,FN_CSUB,main,void main(),main.c,4,6,1
+MET,FN_GOTO,main,void main(),main.c,4,6,0
+MET,FN_RETN,main,void main(),main.c,4,6,1
+MET,FN_UELS,main,void main(),main.c,4,6,0
+MET,FN_NEST,main,void main(),main.c,4,6,0
+MET,FN_CYCM,main,void main(),main.c,4,6,1
+MET,FL_STMT,main.c,1
+MET,FL_FUNC,main.c,1

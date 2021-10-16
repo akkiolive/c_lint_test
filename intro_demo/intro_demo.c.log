@@ -1,0 +1,3 @@
+I, [2021-10-16 22:47:37 #2756]  INFO -- SMA-3.2.14: start analysis by adlint-3.2.14 with c_builtin-3.2.14.
+I, [2021-10-16 22:47:37 #2756]  INFO -- SMA-3.2.14: including "intro_demo.h" at intro_demo.c:1:1
+I, [2021-10-16 22:47:37 #2756]  INFO -- SMA-3.2.14: including "useless_header.h" at intro_demo.c:2:1
