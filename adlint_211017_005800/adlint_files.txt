@@ -1,3 +1,0 @@
-a.c
-b.c
-main.c

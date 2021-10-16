@@ -1,4 +1,4 @@
-VER,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+VER,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
 DCL,main.c,1,15,V,a,double
 DCL,main.c,2,13,F,X,F,E,test_b,void test_b()
 DEF,main.c,4,6,F,X,F,main,void main(),4

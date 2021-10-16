@@ -1,5 +1,5 @@
-V,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
-W,b.c,1,15,c_builtin,W0770,UNC,X99,A declaration of identifier `a' which has external coupling exists more than one.
-C,main.c,1,15,c_builtin,C0001,INF,X99,A warning is detected as a pair of this identifier `a'.
-W,main.c,1,15,c_builtin,W0770,UNC,X99,A declaration of identifier `a' which has external coupling exists more than one.
-C,b.c,1,15,c_builtin,C0001,INF,X99,A warning is detected as a pair of this identifier `a'.
+V,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+W,b.c,1,15,c_builtin,W0770,UNC,X99,外部結合をもつ識別子 `a' の宣言が、二つ以上存在しています。
+C,main.c,1,15,c_builtin,C0001,INF,X99,この識別子 `a' で警告を検知しました。
+W,main.c,1,15,c_builtin,W0770,UNC,X99,外部結合をもつ識別子 `a' の宣言が、二つ以上存在しています。
+C,b.c,1,15,c_builtin,C0001,INF,X99,この識別子 `a' で警告を検知しました。

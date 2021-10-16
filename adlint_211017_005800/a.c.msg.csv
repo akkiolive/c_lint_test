@@ -1,3 +1,0 @@
-V,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
-W,a.c,1,1,c_builtin,W0511,UNC,X99,C++ style comment of `//' is used.
-W,a.c,,,c_builtin,W9002,UNC,X99,There is no line feed character at the end of file.

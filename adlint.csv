@@ -1,40 +1,40 @@
 =============adlint.msg.csv============= 
-V,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
-W,b.c,1,15,c_builtin,W0770,UNC,X99,A declaration of identifier `a' which has external coupling exists more than one.
-C,main.c,1,15,c_builtin,C0001,INF,X99,A warning is detected as a pair of this identifier `a'.
-W,main.c,1,15,c_builtin,W0770,UNC,X99,A declaration of identifier `a' which has external coupling exists more than one.
-C,b.c,1,15,c_builtin,C0001,INF,X99,A warning is detected as a pair of this identifier `a'.
+V,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+W,b.c,1,15,c_builtin,W0770,UNC,X99,外部結合をもつ識別子 `a' の宣言が、二つ以上存在しています。
+C,main.c,1,15,c_builtin,C0001,INF,X99,この識別子 `a' で警告を検知しました。
+W,main.c,1,15,c_builtin,W0770,UNC,X99,外部結合をもつ識別子 `a' の宣言が、二つ以上存在しています。
+C,b.c,1,15,c_builtin,C0001,INF,X99,この識別子 `a' で警告を検知しました。
 =============a.c.msg.csv============= 
-V,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
-W,a.c,1,1,c_builtin,W0511,UNC,X99,C++ style comment of `//' is used.
-W,a.c,,,c_builtin,W9002,UNC,X99,There is no line feed character at the end of file.
+V,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+W,a.c,1,1,c_builtin,W0511,UNC,X99,C++ コメント `//' が使われています。
+W,a.c,,,c_builtin,W9002,UNC,X99,ファイルの末尾に改行文字がありません。
 =============b.c.msg.csv============= 
-V,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
-W,b.c,1,15,c_builtin,W0118,UNC,X99,"`a' has external-linkage, but no prototype declaration is in header files."
-W,b.c,3,6,c_builtin,W0117,UNC,X99,`test_b' has external-linkage without any prototype declarations.
-W,b.c,3,6,c_builtin,W0540,UNC,X99,A function which the blank formal argument list is declared. `void' is omitted.
-W,b.c,4,4,c_builtin,W0432,UNC,X99,Indentation of this line does not comply with the project's indent style.
-W,b.c,,,c_builtin,W0059,UNC,X99,Ctrl-M(^M) control character is found at the end of line.
-W,b.c,,,c_builtin,W9002,UNC,X99,There is no line feed character at the end of file.
+V,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+W,b.c,1,15,c_builtin,W0118,UNC,X99,外部結合を持つ `a' の宣言が、ヘッダファイルの中にありません。
+W,b.c,3,6,c_builtin,W0117,UNC,X99,`test_b' の定義は外部結合を持ちますが、定義より前にその宣言がありません。
+W,b.c,3,6,c_builtin,W0540,UNC,X99,空の仮引数並びの関数が定義されています。`void' が省略されています。
+W,b.c,4,4,c_builtin,W0432,UNC,X99,この行はプロジェクトのインデントスタイルと合っていません。
+W,b.c,,,c_builtin,W0059,UNC,X99,このファイルの行末に Ctrl-M(^M) 制御文字が見つかりました。
+W,b.c,,,c_builtin,W9002,UNC,X99,ファイルの末尾に改行文字がありません。
 =============main.c.msg.csv============= 
-V,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
-W,main.c,1,15,c_builtin,W0118,UNC,X99,"`a' has external-linkage, but no prototype declaration is in header files."
-W,main.c,2,13,c_builtin,W0118,UNC,X99,"`test_b' has external-linkage, but no prototype declaration is in header files."
-W,main.c,2,13,c_builtin,W0078,UNC,X99,A function is declared without list of formal argument.
-W,main.c,4,6,c_builtin,W0066,UNC,X99,"`main()' function must `int (void)' or `int (int, char *[])'."
-W,main.c,4,6,c_builtin,W0540,UNC,X99,A function which the blank formal argument list is declared. `void' is omitted.
-W,main.c,,,c_builtin,W0059,UNC,X99,Ctrl-M(^M) control character is found at the end of line.
-W,main.c,,,c_builtin,W9002,UNC,X99,There is no line feed character at the end of file.
+V,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+W,main.c,1,15,c_builtin,W0118,UNC,X99,外部結合を持つ `a' の宣言が、ヘッダファイルの中にありません。
+W,main.c,2,13,c_builtin,W0118,UNC,X99,外部結合を持つ `test_b' の宣言が、ヘッダファイルの中にありません。
+W,main.c,2,13,c_builtin,W0078,UNC,X99,仮引数並びがない関数が宣言されています。
+W,main.c,4,6,c_builtin,W0066,UNC,X99,"`main()' 関数は、`int (void)' または `int (int, char *[])' のどちらかでなければなりません。"
+W,main.c,4,6,c_builtin,W0540,UNC,X99,空の仮引数並びの関数が定義されています。`void' が省略されています。
+W,main.c,,,c_builtin,W0059,UNC,X99,このファイルの行末に Ctrl-M(^M) 制御文字が見つかりました。
+W,main.c,,,c_builtin,W9002,UNC,X99,ファイルの末尾に改行文字がありません。
 =============adlint.met.csv============= 
-VER,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+VER,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
 MET,FN_CALL,test_b,void test_b(),b.c,3,6,1
 MET,FN_CALL,main,void main(),main.c,4,6,0
 =============a.c.met.csv============= 
-VER,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+VER,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
 MET,FL_STMT,a.c,0
 MET,FL_FUNC,a.c,0
 =============b.c.met.csv============= 
-VER,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+VER,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
 DCL,b.c,1,15,V,a,double
 DEF,b.c,3,6,F,X,F,test_b,void test_b(),3
 DEP,b.c,4,6,X,V,test_b,void test_b(),W,a
@@ -55,7 +55,7 @@ MET,FN_CYCM,test_b,void test_b(),b.c,3,6,1
 MET,FL_STMT,b.c,1
 MET,FL_FUNC,b.c,1
 =============main.c.met.csv============= 
-VER,3.2.14,2021-10-17 00:57:59 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
+VER,3.2.14,2021-10-17 01:33:05 +0900,c:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
 DCL,main.c,1,15,V,a,double
 DCL,main.c,2,13,F,X,F,E,test_b,void test_b()
 DEF,main.c,4,6,F,X,F,main,void main(),4

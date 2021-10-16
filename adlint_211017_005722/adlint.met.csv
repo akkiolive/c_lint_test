@@ -1,3 +1,0 @@
-VER,3.2.14,2021-10-17 00:46:04 +0900,C:/Users/vanch/OneDrive/Documents/MyProgramming/211016. link error check/adlint
-MET,FN_CALL,test_b,void test_b(),b.c,3,6,1
-MET,FN_CALL,main,void main(),main.c,4,6,0
